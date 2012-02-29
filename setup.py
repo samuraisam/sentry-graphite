@@ -18,12 +18,12 @@ except ImportError:
 
 install_requires = [
     'sentry>=2.1.0',
-    'pystatsd',
+    'scales',
 ]
 
 setup(
     name='sentry-graphite',
-    version='0.1.0',
+    version='0.2.0',
     author='DISQUS',
     author_email='opensource@disqus.com',
     url='http://github.com/disqus/sentry-graphite',
@@ -41,5 +41,5 @@ setup(
         'Operating System :: OS Independent',
         'Topic :: Software Development'
     ],
-    keywords='sentry graphite',
+    keywords='sentry graphite scales',
 )
