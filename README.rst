@@ -12,11 +12,16 @@ Install the package via ``pip``::
 
 Add ``sentry_graphite`` to your ``INSTALLED_APPS``::
 
-    INSTALLED_APPS = (
-        # ...
-        'sentry',
+    from sentry.conf.server import *
+
+    INSTALLED_APPS = INSTALLED_APPS + (
         'sentry_graphite',
     )
+
+If this is the first plugin you are adding to sentry then you will have to modify
+the settings file so it imports the correct settings. Your installed apps must look
+like the above, adding to the existing installed apps which are imported from
+`sentry.conf.server`.
 
 Configuration
 -------------

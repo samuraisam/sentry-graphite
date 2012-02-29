@@ -17,7 +17,7 @@ except ImportError:
     from setuptools import setup, find_packages
 
 install_requires = [
-    'sentry>=2.1.0',
+    'sentry>=3.2.0',
     'scales',
 ]
 
