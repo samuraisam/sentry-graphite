@@ -8,7 +8,7 @@ sentry_graphite
 
 from django import forms
 from sentry.conf import settings
-from sentry.plugins import Plugin
+from sentry.plugins import Plugin, register
 
 from pystatsd import Client
 
@@ -99,3 +99,4 @@ class GraphiteProcessor(Plugin):
 
         self.record_event(group, event)
  
+ register(GraphiteProcessor)
