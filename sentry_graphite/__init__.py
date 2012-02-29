@@ -19,7 +19,7 @@ class GraphiteConfigurationForm(forms.Form):
     host = forms.CharField(max_length=64, widget=forms.TextInput(attrs={
         'placeholder': 'graphite.local',
     }))
-    port = forms.IntegerField(max_value=65535, widget=forms.TextInput(attr={
+    port = forms.IntegerField(max_value=65535, widget=forms.TextInput(attrs={
         'placeholder': '8125',
     }))
     prefix = forms.CharField(max_length=64, widget=forms.TextInput(attrs={
